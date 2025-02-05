@@ -1,0 +1,44 @@
+/* drawer and nav bar css*/
+.appbar{
+    position: sticky;
+    width: 100%;
+    z-index: 1300;
+}
+
+.toolbar{
+    color: #6d6d6d;
+    background: linear-gradient(to right, #1a1a1a, #353535, #1a1a1a);
+    box-shadow: 0 0 25px #000000; /* Animated glow effect */
+}
+
+* {
+    font-family: monospace;
+}
+
+.logoutbtn{
+    color: #ff4fa7;
+}
+
+/* popup: 'custom-popup',           // Custom style for the popup
+title: 'custom-title',           // Custom style for the title
+content: 'custom-content',       // Custom style for the content
+confirmButton: 'custom-confirm', // Custom style for the confirm button
+cancelButton: 'custom-cancel',   // Custom style for the cancel button */
+
+.custom-popup{
+    background: #ffb3ff;
+    z-index: 9999;
+    border: 2px solid #ff4fa7;
+}
+
+.custom-confirm{
+    background: #ff4fa7;
+}
+
+.custom-popup:hover,
+.custom-popup:focus-within {
+  border-color: #ff4fa7; /* Highlight border when hovered or focused */
+  box-shadow: 0 0 15px #ff4fa7; /* Animated glow effect */
+  transform: scale(1.05); /* Slight scale animation */
+}
+

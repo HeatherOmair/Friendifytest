@@ -1,0 +1,62 @@
+/* feedpage css*/
+
+/* Global styles for the body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #212121; /* Background for the whole page */
+    color: #fff; /* White text color for the entire page */
+    font-family: 'Monospace', sans-serif; /* Consistent monospace font for the whole page */
+    letter-spacing: 0.05em;
+    height: 100vh; /* Make sure body takes full viewport height */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 0;
+    position: relative;
+  }
+  
+  /* SignIn Form Container */
+  .form-wrapper {
+    width: 500px; /* Make the form wider */
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0); /* Dark background to make text visible */
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    color: #fff;
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Light border */
+    border-radius: 8px; /* Rounded corners for the box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow to create depth */
+    z-index: 1; /* Ensure the form is above the animation */
+  }
+  
+  /* Control Container */
+  .form-wrapper .control {
+    margin: 0 0 24px;
+  }
+  
+  /* Targeting Autofill background */
+  input:-webkit-autofill {
+    background-color: #212121 !important;
+    color: white !important;
+  }
+  
+  input:-webkit-autofill::first-line {
+    font-family: 'Monospace' !important;
+    font-size: 16px !important;
+  }
+  
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  /* Animated Border Effect */
+  .form-wrapper:hover,
+  .form-wrapper:focus-within {
+    border-color: rgba(0, 212, 255, 1); /* Highlight border when hovered or focused */
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.6); /* Animated glow effect */
+    transform: scale(1.05); /* Slight scale animation */
+  }
+  
